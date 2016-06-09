@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="ru.ugraweb.utro2016" version="1.0.0">
+<widget 
+	xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap = "http://phonegap.com/ns/1.0" 
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	id="ru.ugraweb.utro2016" 
+	version="1.0.0">
   <name>Утро 2016</name>
   <description>Шестой форум молодежи Уральского федерального округа «УТРО-2016»</description>
   <author email="ugraweb@gmail.com" href="http://ugraweb.ru">Ugraweb Team</author>
@@ -29,6 +34,12 @@
   <preference name="SplashScreenDelay" value="0"/>
   <preference name="FadeSplashScreenDuration" value="0"/>
   <preference name="ShowSplashScreenSpinner" value="false"/>
+  
+	<config-file platform="android" parent="/manifest" mode="merge">
+		<meta-data android:name="PW_APPID" android:value="69FF7-FF417" />
+		<meta-data android:name="PW_PROJECT_ID" android:value="924626941924" />
+	</config-file>
+  
   <icon src="res/icon/128.png"/>
   <platform name="android">
     <!--
